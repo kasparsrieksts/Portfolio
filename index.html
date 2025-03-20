@@ -14,17 +14,22 @@
     left: 0;
     top: 0;
     width: 250px; /* Paplašināts platums */
-    height: 100vh; /* Aizņem visu ekrāna augstumu */
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><pattern id="pattern" patternUnits="userSpaceOnUse" width="40" height="40"><circle cx="10" cy="10" r="4" fill="%23ff9a9e"/><rect x="20" y="20" width="10" height="10" fill="%23fad0c4"/><path d="M 0 20 L 20 0" stroke="%238a2be2" stroke-width="2"/></pattern><rect width="100%" height="100%" fill="url(%23pattern)"/></svg>');
-     background-size: cover;
-     display: flex;
+    height: 100vh; /* Pilns ekrāna augstums */
+    background: repeating-linear-gradient(
+        to bottom,
+        #333 0px,  /* Līnijas krāsa */
+        #333 2px,  /* Līnijas biezums */
+        transparent 2px, 
+        transparent 20px /* Attālums starp līnijām */
+    );
+    display: flex;
     justify-content: center;
     align-items: center;
-    writing-mode: vertical-rl; /* Teksts no augšas uz leju */
+    writing-mode: vertical-rl; /* Pagriezts teksts 90 grādos */
     text-orientation: upright;
-    font-size: 24px;
-     color: black;
+    font-size: 24px; /* Lielāks teksts */
     font-weight: bold;
+    color: black; /* Var mainīt uz baltu, ja vajag */
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
