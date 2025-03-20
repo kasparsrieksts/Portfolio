@@ -13,23 +13,23 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 250px; /* Paplašināts platums */
+    width: 250px; /* Platums */
     height: 100vh; /* Pilns ekrāna augstums */
     background: repeating-linear-gradient(
-        to bottom,
-        #333 0px,  /* Līnijas krāsa */
-        #333 2px,  /* Līnijas biezums */
-        transparent 2px, 
-        transparent 20px /* Attālums starp līnijām */
+        45deg,  /* Diagonāls virziens */
+        #333 0px,  /* Punktu krāsa */
+        #333 2px,  /* Punkta biezums */
+        transparent 2px,
+        transparent 15px /* Attālums starp punktiem */
     );
     display: flex;
     justify-content: center;
     align-items: center;
     writing-mode: vertical-rl; /* Pagriezts teksts 90 grādos */
     text-orientation: upright;
-    font-size: 24px; /* Lielāks teksts */
+    font-size: 24px;
     font-weight: bold;
-    color: black; /* Var mainīt uz baltu, ja vajag */
+    color: black; /* Teksta krāsa */
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
