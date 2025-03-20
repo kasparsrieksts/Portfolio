@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Kaspara Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+  <title>Kaspara Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
   html, body {
   height: 100%;
   margin: 0;
   overflow-y: auto;
-}
-html {
+  }
+  html {
   scroll-padding-top: 60px; /* Adjust based on your header height */
-}
-html, body, h1, h2, h3, h4, h5, h6 {
+  }
+  html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
-}
+  }
 
-header {
+  header {
   position: fixed;
   top: 0;
   left: 250px; /* Aligns with sidebar */
@@ -30,9 +30,9 @@ header {
   z-index: 1000; /* Keeps it above other elements */
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds slight shadow */
-}
+  }
 
-.w3-sidebar {
+  .w3-sidebar {
   position: fixed;
   z-index: 3;
   width: 250px;
@@ -40,139 +40,105 @@ header {
   bottom: 0;
   height: 100vh;
   overflow-y: auto;
-}
+  }
 
-.w3-main {
+  .w3-main {
   margin-left: 250px; /* Prevents main content from going under the sidebar */
   margin-top: 50px; /* Adjusts to avoid overlapping with the fixed header */
   padding: 20px;
-}
-</style>
+  }
+  </style>
 </head>
 <body>
- <header>
-   <nav>
-    <a href="#section1">Rakstgrafika</a>
-    <a href="#section2">3D Modelēšana</a>
-    <a href="#section3">Video veidošana</a>
-  <a href="#section4">Ms Word</a>
-  <a href="#section5">Ms Excel</a>
-   </nav>
- </header>  
-<!-- Sidebar -->
-  
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
- 
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Skolas uzdevumi</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="https://onedrive.live.com/?authkey=%21AMLHuz27Dxfp1cc&id=D03969CC9682A3B6%2135962&cid=D03969CC9682A3B6">One Drives</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="https://www.e-klase.lv">Eklase</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <section id="section1">
-      <h1 class="w3-text-red">Rakstgrafika</h1>
-      <p>Atzīme: 8</p> 
-    <p>Rakstgrafika bija pirmā tēma ko mēs apguvām šaja mācību gadā, un to mēs apguvām setembrī. Lai izveidotu rakstgrafiku, mēs izmantojām lietotni GIMP, kurā es izvedoju šādu darbu:</p>
-      </section>   
-    </div>
+  <header>
+    <nav>
+      <a href="#section1">Rakstgrafika</a> <a href="#section2">3D Modelēšana</a> <a href="#section3">Video veidošana</a> <a href="#section4">Ms Word</a> <a href="#section5">Ms Excel</a>
+    </nav>
+  </header>
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu"></a>
+    <h4 class="w3-bar-item"><b>Skolas uzdevumi</b></h4><a class="w3-bar-item w3-button w3-hover-black" href="https://onedrive.live.com/?authkey=%21AMLHuz27Dxfp1cc&amp;id=D03969CC9682A3B6%2135962&amp;cid=D03969CC9682A3B6">One Drives</a> <a class="w3-bar-item w3-button w3-hover-black" href="https://www.e-klase.lv">Eklase</a>
+  </nav>
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <div class="w3-main" style="margin-left:250px">
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <section id="section1">
+          <h1 class="w3-text-red">Rakstgrafika</h1>
+          <p>Atzīme: 8</p>
+          <p>Rakstgrafika bija pirmā tēma ko mēs apguvām šaja mācību gadā, un to mēs apguvām setembrī. Lai izveidotu rakstgrafiku, mēs izmantojām lietotni GIMP, kurā es izvedoju šādu darbu:</p>
+        </section>
+      </div>
       <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center"> <img src="images/kaspars.png" alt="Kapars" width="250" height="250"></img></p>
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="images/kaspars.png" alt="Kapars" width="250" height="250"></p>
+      </div>
     </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <section id="section2">
-      <h1 class="w3-text-cyan">3D Modelēšana</h1>
-      <p>Atzīme: 9</p> 
-      <p>3D Modelēšana bija mana mīļākā tēma šogad, kurā mēs darijām dažādus uzdevumus un arī gala atzīme par šo tēmu bija grupas darbs. Tēma tika apgūta novembrī un par grupas darbu par kompāniju dabūju 9, kas ir diezgan labi, bet manuprāt varējām labāk. Šeit redzams grupas logo, kuru izveidoja grupas dalībnieks:</p>
-   </section>  
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="images/loho.png" width="300" length="300"></img></p>
-    </div>
-  </div>
-
-
- 
     <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-       <section id="section3">
-      <h1 class="w3-text-yellow">Video veidošana</h1>
-      <p>Atzīme: 10</p>
-       <p>Manuprāt, Video veidošana bija viena no grūtākajām tēmam, jo man baigi nepadodās taisīt video un vēl pie tam montēt tos ar ko man bija ļoti lielas grūtības. Video veidošanā es dabūju 10, kas nozīme, ka darbs tikai paveikts perfekti un man tas ir paveicies. Šī tēma tika veikta decembrī, un galvenais darbs bija izveidot video par savas grupas kompāniju un parādīt grupas darba gaitu, un video vidū ielikt reklāmu par kādu nosacītu tēmu, es izvēlējos "Kā izveidot drošu paroli?". Bildē redzams kadrs no manas reklāmas:</p>
-      </section>  
+      <div class="w3-twothird w3-container">
+        <section id="section2">
+          <h1 class="w3-text-cyan">3D Modelēšana</h1>
+          <p>Atzīme: 9</p>
+          <p>3D Modelēšana bija mana mīļākā tēma šogad, kurā mēs darijām dažādus uzdevumus un arī gala atzīme par šo tēmu bija grupas darbs. Tēma tika apgūta novembrī un par grupas darbu par kompāniju dabūju 9, kas ir diezgan labi, bet manuprāt varējām labāk. Šeit redzams grupas logo, kuru izveidoja grupas dalībnieks:</p>
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="images/loho.png" width="300" length="300" alt="loho"></p>
+      </div>
     </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="images/download (1)WVAWA.jpg" width="300"height="200"></img></p>
-    
-    </div>
-  </div>
-
-
-  
     <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <section id="section4">
-      <h1 class="w3-text-blue">Ms Word</h1>
-      <p>Atzīme: 9</p> 
-      <p>Ms Words tika apgūts novembra vidū un tika izdarīti daudz uzdevumi. Par šo tēmu es pārbaudes darbā ieguvu 9 un par to esmu apmierināts, lai gan, protams, labāk būtu 10. Šaja tēmā mēs darījām dažadus uzdevumus Worda, kā piemēram, šis:</p>
-     </section>
+      <div class="w3-twothird w3-container">
+        <section id="section3">
+          <h1 class="w3-text-yellow">Video veidošana</h1>
+          <p>Atzīme: 10</p>
+          <p>Manuprāt, Video veidošana bija viena no grūtākajām tēmam, jo man baigi nepadodās taisīt video un vēl pie tam montēt tos ar ko man bija ļoti lielas grūtības. Video veidošanā es dabūju 10, kas nozīme, ka darbs tikai paveikts perfekti un man tas ir paveicies. Šī tēma tika veikta decembrī, un galvenais darbs bija izveidot video par savas grupas kompāniju un parādīt grupas darba gaitu, un video vidū ielikt reklāmu par kādu nosacītu tēmu, es izvēlējos "Kā izveidot drošu paroli?". Bildē redzams kadrs no manas reklāmas:</p>
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="images/download%20(1)WVAWA.jpg" width="300" height="200" alt="download%20(1)WVAWA"></p>
+      </div>
     </div>
-    <div class="w3-third w3-container">
-    
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center"><img src="images/Word pd vai dl.png" width="400" height="300"></img></p>
-    </div>
-  </div>
- 
-
     <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
+      <div class="w3-twothird w3-container">
+        <section id="section4">
+          <h1 class="w3-text-blue">Ms Word</h1>
+          <p>Atzīme: 9</p>
+          <p>Ms Words tika apgūts novembra vidū un tika izdarīti daudz uzdevumi. Par šo tēmu es pārbaudes darbā ieguvu 9 un par to esmu apmierināts, lai gan, protams, labāk būtu 10. Šaja tēmā mēs darījām dažadus uzdevumus Worda, kā piemēram, šis:</p>
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-large w3-padding-64 w3-center"><img src="images/Word%20pd%20vai%20dl.png" width="400" height="300" alt="Word%20pd%20vai%20dl"></p>
+      </div>
+    </div>
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
         <section id="section5">
-      <h1 class="w3-text-green">Ms Excel</h1>
-      <p>Atzīme: ???</p>
-      <p>Ms Excel tēma ir visjaunākā no visām un tā ir viena no manām mīļākajām tēmām, jo man patīk strādāt Exceli un izmantot tā dotās iespējas. Par šo tēmu nav vel izlikta atzīme, bet, manuprāt, es uzrakstiju diezgan labi un nevajadzētu būt slikti. Pārbaudes darbs tika rakstīts 24. janvārī un šiet bilde no viena no uzd pārbaudes darbā:</p>
-  </section>  
+          <h1 class="w3-text-green">Ms Excel</h1>
+          <p>Atzīme: ???</p>
+          <p>Ms Excel tēma ir visjaunākā no visām un tā ir viena no manām mīļākajām tēmām, jo man patīk strādāt Exceli un izmantot tā dotās iespējas. Par šo tēmu nav vel izlikta atzīme, bet, manuprāt, es uzrakstiju diezgan labi un nevajadzētu būt slikti. Pārbaudes darbs tika rakstīts 24. janvārī un šiet bilde no viena no uzd pārbaudes darbā:</p>
+        </section>
+      </div>
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="images/excel%20parbaudes%20db.png" width="300" height="200" alt="excel%20parbaudes%20db"></p>
+      </div>
     </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="images/excel parbaudes db.png" width="300"height="200"></img></p>
-
-    </div>
+    <footer id="myFooter">
+      <div class="w3-container w3-theme-l2 w3-padding-32">
+        <h4>BEIGAS</h4>
+      </div>
+      <div class="w3-container w3-theme-l1">
+        <p>izveidojis Kaspars Riekstiņš</p>
+      </div>
+    </footer>
   </div>
-  
+  <script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
 
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>BEIGAS</h4>
-    </div>
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
 
-    <div class="w3-container w3-theme-l1">
-      <p>izveidojis Kaspars Riekstiņš</p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
     overlayBg.style.display = "none";
@@ -180,14 +146,13 @@ function w3_open() {
     mySidebar.style.display = 'block';
     overlayBg.style.display = "block";
   }
-}
+  }
 
-// Close the sidebar with the close button
-function w3_close() {
+  // Close the sidebar with the close button
+  function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
-}
-</script>
-
+  }
+  </script>
 </body>
 </html>
