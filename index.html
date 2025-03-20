@@ -13,7 +13,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 260px; /* Paplašināts platums */
+    width: 250px; /* Paplašināts platums */
     height: 100vh; /* Aizņem visu ekrāna augstumu */
     background: rgba(255, 255, 255, 0.9); /* Neliela caurspīdība */
     display: flex;
@@ -64,13 +64,32 @@
   header {
   position: fixed;
   top: 0;
-  left: 250px; /* Aligns with sidebar */
-  width: calc(100% - 250px); /* Prevents header from covering sidebar */
+  left: 250px; /* Adjusted to match the sidebar width */
+  width: calc(100% - 250px); /* Ensures it doesn't overlap the sidebar */
   background-color: white;
-  z-index: 1000; /* Keeps it above other elements */
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds slight shadow */
-  }
+  z-index: 1000;
+  padding: 15px 20px; /* More padding for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  text-align: center; /* Centers the text */
+  font-size: 22px; /* Makes text larger */
+  font-weight: bold; /* Makes it stand out */
+  letter-spacing: 1.5px; /* Adds spacing between letters */
+}
+
+/* Remove underline from links inside header */
+header a {
+  text-decoration: none;
+  color: black; /* Ensures good contrast */
+  padding: 10px 15px; /* Adds spacing around links */
+  transition: color 0.3s, background-color 0.3s; /* Smooth effect */
+}
+
+/* Adds a hover effect to make it more interactive */
+header a:hover {
+  color: white;
+  background-color: #ff758c; /* A soft pink highlight */
+  border-radius: 5px; /* Smooth edges */
+}
 
   .w3-sidebar {
   position: fixed;
