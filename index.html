@@ -13,25 +13,37 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 250px; /* Platums */
-    height: 100vh; /* Pilns ekrāna augstums */
+    width: 250px;
+    height: 100vh;
     background: repeating-linear-gradient(
-        45deg,  /* Diagonāls virziens */
-        #333 0px,  /* Punktu krāsa */
-        #333 2px,  /* Punkta biezums */
+        45deg,
+        rgba(0, 0, 0, 0.1) 0px,  /* Viegli pelēkas līnijas */
+        rgba(0, 0, 0, 0.1) 2px,
         transparent 2px,
-        transparent 15px /* Attālums starp punktiem */
+        transparent 15px
     );
     display: flex;
     justify-content: center;
     align-items: center;
-    writing-mode: vertical-rl; /* Pagriezts teksts 90 grādos */
+    writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: 24px;
     font-weight: bold;
     color: black; /* Teksta krāsa */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Balta ēna uz burtiem */
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+}
+
+/* Balts puscaurspīdīgs fons aiz burtiem */
+.vertical-text::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.6); /* Balts, bet caurspīdīgs */
+    z-index: -1; /* Aiz burtiem */
+    border-radius: 10px; /* Noapaļoti stūri */
 }
     .theme-box {
     padding: 20px;
