@@ -11,36 +11,51 @@
 <style>
   html, body {
   height: 100%;
+  margin: 0;
   overflow-y: auto;
 }
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 250px; /* Aligns with sidebar */
+  width: calc(100% - 250px); /* Prevents header from covering sidebar */
+  background-color: white;
+  z-index: 1000; /* Keeps it above other elements */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds slight shadow */
+}
+
 .w3-sidebar {
+  position: fixed;
   z-index: 3;
   width: 250px;
-  top: 0px;
+  top: 0;
   bottom: 0;
-  height: 100vh; /* Pilns ekrāna augstums */
-  overflow-y: auto; /* Pievieno ritjoslu sānu joslai, ja nepieciešams */
-
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white; /* Change if needed */
-    z-index: 1000; /* Makes sure it stays above other elements */
-    padding: 10px 0; /* Add padding to make sure content inside is visible */
+  height: 100vh;
+  overflow-y: auto;
 }
+
+.w3-main {
+  margin-left: 250px; /* Prevents main content from going under the sidebar */
+  margin-top: 50px; /* Adjusts to avoid overlapping with the fixed header */
+  padding: 20px;
 }
 </style>
 </head>
 <body>
  <header>
+   <nav>
     <a href="#section1">Rakstgrafika</a>
     <a href="#section2">3D Modelēšana</a>
     <a href="#section3">Video veidošana</a>
   <a href="#section4">Ms Word</a>
   <a href="#section5">Ms Excel</a>
+   </nav>
  </header>  
 <!-- Sidebar -->
   
