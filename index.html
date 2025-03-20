@@ -9,6 +9,23 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+    .vertical-text {
+    position: fixed;
+    left: 10px; /* Attālums no kreisās malas */
+    top: 50%; /* Centrē vertikāli */
+    transform: translateY(-50%) rotate(-90deg); /* Apgriež tekstu */
+    transform-origin: left top;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333; /* Krāsas vari pielāgot */
+    background: rgba(255, 255, 255, 0.8); /* Neliels fona caurspīdīgums */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Lai būtu virs pārējā satura */
+}
     .theme-box {
     padding: 20px;
     margin-bottom: 30px;
@@ -74,6 +91,7 @@
   </style>
 </head>
 <body>
+  <div class="vertical-text">MANS PORTFOLIO</div>
   <header>
     <nav>
       <a href="#section1">Rakstgrafika</a> <a href="#section2">3D Modelēšana</a> <a href="#section3">Video veidošana</a> <a href="#section4">Ms Word</a> <a href="#section5">Ms Excel</a>
