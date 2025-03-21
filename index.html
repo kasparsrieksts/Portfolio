@@ -325,6 +325,15 @@ header a {
     </footer>
   </div>
   <script>
+    document.addEventListener("click", function (event) {
+    let menu = document.querySelector(".menu-links");
+    let button = document.querySelector(".menu-btn");
+
+    // Aizver izvēlni, ja klikšķis NAV uz izvēlnes vai pogas
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.classList.remove("active");
+    }
+});
  function toggleMenu() {
     document.querySelector(".menu-links").classList.toggle("active");
   }
