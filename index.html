@@ -9,6 +9,42 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+    .menu-btn {
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .menu-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+    .menu-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .menu-links.active {
+      display: flex;
+    }
+  }
    .vertical-text {
     position: fixed;
     left: 0;
@@ -186,8 +222,12 @@ header a {
 <body>
   <div class="vertical-text">MANS PORTFOLIO</div>
   <header>
+    
     <nav>
+      <button class="menu-btn" onclick="toggleMenu()">Izvēlne</button>
+    <div class="menu-links">
       <a href="#section1" class="poga-rakstgrafika">Rakstgrafika</a> <a href="#section2" class="poga-3d">3D Modelēšana</a> <a href="#section3" class="poga-video">Video veidošana</a> <a href="#section4" class="poga-word">Ms Word</a> <a href="#section5" class="poga-excel">Ms Excel</a>
+    </div>
     </nav>
   </header>
 
@@ -285,6 +325,10 @@ header a {
     </footer>
   </div>
   <script>
+ function toggleMenu() {
+    document.querySelector(".menu-links").classList.toggle("active");
+  }
+    
   // Get the Sidebar
   var mySidebar = document.getElementById("mySidebar");
 
