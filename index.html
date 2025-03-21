@@ -14,13 +14,41 @@
   border: none; /* Noņem jebkādu robežu */
   box-shadow: none; /* Noņem ēnu, ja tāda ir */
 }
-    @media (max-width: 768px) {
+   @media (max-width: 768px) {
+  /* Paslēpj sidebar */
   .w3-sidebar {
     display: none;
   }
+
+  /* Nodrošina, ka galvenais saturs aizņem visu platumu un nav aizsegts */
   .w3-main {
-    margin-left: 0 !important; /* Noņem lieko vietu, ko aizņem sidebar */
+    margin-left: 0 !important; 
   }
+
+  /* Slēpj izvēlni pēc noklusējuma un parāda to, kad tiek uzklikšķināts uz pogas */
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  /* Parāda izvēlni, ja tā ir aktīva */
+  .menu-links.active {
+    display: flex;
+  }
+
+  /* Izvēlnes poga (hamburger menū) tiek parādīta mobilajās ierīcēs */
+  .menu-btn {
+    display: block;
+  }
+}
 }
     @media (max-width: 768px) {
   .vertical-text {
@@ -343,6 +371,10 @@ header a {
     </footer>
   </div>
   <script>
+
+    function toggleMenu() {
+    document.querySelector(".menu-links").classList.toggle("active");
+}
     document.addEventListener("click", function (event) {
     let menu = document.querySelector(".menu-links");
     let button = document.querySelector(".menu-btn");
