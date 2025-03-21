@@ -160,7 +160,17 @@ header a {
   font-weight: bold;
   transition: color 0.3s, background-color 0.3s;
 }
+header {
+  left: 250px;
+  width: calc(100% - 250px);
+}
 
+@media (max-width: 768px) {
+  header {
+    left: 0;
+    width: 100%;
+  }
+}
 /* Katrai pogai sava noklusētā krāsa */
 .poga-rakstgrafika {
   background-color: #ffadad; /* Maiga sarkana */
@@ -218,10 +228,15 @@ header a {
   overflow-y: auto;
   }
 
+ .w3-main {
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) {
   .w3-main {
-  margin-left: 250px; /* Prevents main content from going under the sidebar */
-  margin-top: 50px; /* Adjusts to avoid overlapping with the fixed header */
-  padding: 20px;
+    margin-left: 0 !important;
+  }
+}
   }
    .w3-border {
     border: none !important;
