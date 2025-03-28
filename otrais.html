@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-  <title>Kaspara Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <style>
-    body {
-      font-family: "Roboto", sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    .menu-btn {
-      display: none;
-    }
-
-    /* Stilizējam "Individuālās tēmas" sadaļu */
-    #myFooter {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* Pievienojam jauno "Nav" ar 3 pogām apakšā */
-    .nav-box {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .nav-box a {
-      color: white;
-      text-decoration: none;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #5f6368;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    .nav-box a:hover {
-      background-color: #444;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individuālā tēma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .info-box {
+            width: 50%;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            border: none;
+            resize: none;
+            outline: none;
+            background: none;
+            font-size: 16px;
+            font-family: inherit;
+            color: black;
+            pointer-events: none;
+        }
+        .video-box {
+            width: 50%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+    </style>
 </head>
 <body>
-
-  <div class="w3-container" style="text-align:center; margin-top:50px;">
+    <div class="navbar">Nav bars</div>
     <h1>Individuālā tēma</h1>
-  </div>
-
-  <!-- Šī ir "Individuālā tēma" sadaļa -->
-  <div class="w3-container">
-    <p>Šeit varētu būt tavas individuālās tēmas saturs...</p>
-  </div>
-
-  <!-- Apakšējais "Nav" ar 3 pogām, kas ved uz citām mājaslapām -->
-  <div class="nav-box">
-    <a href="https://www.example1.com" target="_blank">Mājaslapa 1</a>
-    <a href="https://www.example2.com" target="_blank">Mājaslapa 2</a>
-    <a href="https://www.example3.com" target="_blank">Mājaslapa 3</a>
-  </div>
-
-  <footer id="myFooter">
-    <p>Izveidojis Kaspars Riekstiņš</p>
-  </footer>
-
+    <div class="container">
+        <div class="info-box">
+            <h2>Informācija par video</h2>
+            <textarea readonly>Šeit būs informācija par video.</textarea>
+        </div>
+        <div class="video-box">
+            <h2>Video reklāma</h2>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 </html>
