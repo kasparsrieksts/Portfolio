@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video un Info Kastes</title>
+    <title>Mājaslapa ar Video un Aprakstu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
         }
         .container {
-            display: flex;
-            gap: 20px;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-        .box {
-            width: 300px;
-            padding: 15px;
+        .video-container, .info-container {
             background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .video-box iframe {
+        .video-container {
+            text-align: center;
+        }
+        iframe {
             width: 100%;
-            height: 200px;
-            border: none;
+            height: 315px;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- Teksta kaste -->
-        <div class="box text-box">
-            <h3>Par Video</h3>
-            <p>Šeit var ierakstīt aprakstu par video vai reklāmu.</p>
+        <header>
+            <h1>Laipni lūgti manā mājaslapā</h1>
+        </header>
+        
+        <div class="info-container">
+            <h2>Video Apraksts</h2>
+            <p>Šeit var pievienot informāciju par video vai reklāmu.</p>
         </div>
-
-        <!-- Video kaste -->
-        <div class="box video-box">
-            <h3>Video</h3>
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        
+        <div class="video-container">
+            <h2>Video</h2>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-
 </body>
 </html>
