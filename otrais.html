@@ -3,50 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mājaslapa ar Video un Aprakstu</title>
+    <title>Video un Informācija</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 20px;
         }
-        .video-container, .info-container {
-            background: white;
+        .box {
+            width: 45%;
             padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        .video-container {
-            text-align: center;
-        }
-        iframe {
+        textarea {
             width: 100%;
-            height: 315px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
+    
+    <div class="navbar">
+        <a href="#">Sākums</a>
+        <a href="#">Par mums</a>
+        <a href="#">Pakalpojumi</a>
+        <a href="#">Kontakti</a>
+    </div>
+    
     <div class="container">
-        <header>
-            <h1>Laipni lūgti manā mājaslapā</h1>
-        </header>
-        
-        <div class="info-container">
-            <h2>Video Apraksts</h2>
-            <p>Šeit var pievienot informāciju par video vai reklāmu.</p>
+        <div class="box">
+            <h2>Informācija par video</h2>
+            <textarea placeholder="Ievadiet informāciju par video..."></textarea>
         </div>
-        
-        <div class="video-container">
-            <h2>Video</h2>
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <div class="box">
+            <h2>Video reklāma</h2>
+            <video width="100%" controls>
+                <source src="video.mp4" type="video/mp4">
+                Jūsu pārlūks neatbalsta video elementu.
+            </video>
         </div>
     </div>
+    
 </body>
 </html>
