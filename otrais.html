@@ -3,63 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mājaslapa</title>
+    <title>Video un Info Kastes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
         .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            position: fixed;
-            bottom: 0;
+        .box {
+            width: 300px;
+            padding: 15px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .video-box iframe {
             width: 100%;
+            height: 200px;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Individuālā tēma</h1>
-    </header>
-    <nav>
-        <a href="#">Atpakaļ uz portfolio</a>
-        <a href="#">Kontakti</a>
-    </nav>
+
     <div class="container">
-        <h2>Laipni lūgti!</h2>
-        <p>Šī ir līdzīga mājaslapa ar vienkāršu un modernu dizainu.</p>
+        <!-- Teksta kaste -->
+        <div class="box text-box">
+            <h3>Par Video</h3>
+            <p>Šeit var ierakstīt aprakstu par video vai reklāmu.</p>
+        </div>
+
+        <!-- Video kaste -->
+        <div class="box video-box">
+            <h3>Video</h3>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </div>
     </div>
-    <footer>
-        &copy; 2025 Mājaslapa
-    </footer>
+
 </body>
 </html>
